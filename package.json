@@ -43,6 +43,6 @@
     "node": ">= 10"
   },
   "scripts": {
-    "test": "eslint lib && tape test/geocoder.test.js"
+    "test": "eslint lib && tape test/*.test.js"
   }
 }

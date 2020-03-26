@@ -1,0 +1,48 @@
+{
+  "name": "node-mbtiles",
+  "version": "1.0.2",
+  "description": "基于Mapbox Mbtiles扩展使其async/await封装，方便集成开发，又支持callback，兼容原来版本",
+  "url": "https://github.com/FreeGIS/node-mbtiles",
+  "author": "freegis",
+  "keywords": [
+    "map",
+    "mbtiles"
+  ],
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ],
+  "main": "./lib/mbtiles",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/FreeGIS/node-mbtiles.git"
+  },
+  "contributors": [
+    "Tom MacWright <tmcw>",
+    "Will White <willwhite>",
+    "Dane Springmeyer <springmeyer>",
+    "Young Hahn <yhahn>",
+    "Konstantin Käfer <kkaefer>",
+    "Andrew Pendleton <apendleton>",
+    "Kai Dalgleish <kaibot3000>"
+  ],
+  "dependencies": {
+    "@mapbox/sphericalmercator": "~1.1.0",
+    "@mapbox/tiletype": "0.3.x",
+    "d3-queue": "~3.0.7",
+    "sqlite3": "4.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-unstyled": "^1.1.0",
+    "tape": "^4.13.2"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "test": "eslint lib && tape test/geocoder.test.js"
+  }
+}
